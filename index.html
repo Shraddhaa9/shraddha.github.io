@@ -13,20 +13,28 @@
       color: #f4f4f4;
       line-height: 1.6;
       padding: 2rem;
+      transition: background-color 0.5s ease, color 0.5s ease;
     }
     a {
       color: #58a6ff;
       text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #ffffff;
     }
     h1, h2, h3 {
       color: #ffffff;
+      transition: color 0.3s ease;
     }
     .container {
       max-width: 1000px;
       margin: auto;
+      animation: fadeIn 1s ease-in-out;
     }
     .section {
       margin-bottom: 3rem;
+      transition: all 0.3s ease;
     }
     .section h2 {
       border-bottom: 2px solid #333;
@@ -51,6 +59,22 @@
       border-radius: 5px;
       text-decoration: none;
       font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .download-btn:hover {
+      background-color: #1f6feb;
+      transform: scale(1.05);
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.6rem;
+      transition: color 0.3s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
