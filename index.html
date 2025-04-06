@@ -42,16 +42,40 @@
     li {
       margin-bottom: 0.6rem;
     }
+    .top-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .download-btn {
+      padding: 0.5rem 1rem;
+      background-color: #58a6ff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Shraddhaben Rakholiya</h1>
-    <p class="contact">
-      <a href="mailto:srakholiya@hawk.iit.edu">srakholiya@hawk.iit.edu</a> | 224-875-8366 | Chicago, IL | Open to relocation<br>
-      <a href="https://www.linkedin.com/in/shraddharakholiya/">LinkedIn</a> |
-      <a href="https://github.com/Shraddhaa9">GitHub</a>
-    </p>
+    <div class="top-bar">
+      <div>
+        <h1>Shraddhaben Rakholiya</h1>
+        <p class="contact">
+          <a href="mailto:srakholiya@hawk.iit.edu">srakholiya@hawk.iit.edu</a> |
+          224-875-8366 |
+          Chicago, IL |
+          Open to relocation |
+          <a href="https://www.linkedin.com/in/shraddharakholiya/">LinkedIn</a> |
+          <a href="https://github.com/Shraddhaa9">GitHub</a>
+        </p>
+      </div>
+      <a class="download-btn" href="Resume_Shraddhaben_Rakholiya.pdf" download>Download Resume</a>
+    </div>
 
     <div class="section">
       <h2>About Me</h2>
@@ -65,31 +89,31 @@
       <h3>Software Engineer | Picus Tech Software | May 2018 – May 2023</h3>
       <strong>Infotainment & CarPlay Development | C, C++, Linux, GStreamer, ALSA, TCP/IP, Bluetooth, Wi-Fi, MFi, iAP2</strong>
       <ul>
-        <li>Led development of CarPlay Infotainment system on i.MX8 and custom SoCs integrating voice control, real-time navigation, and wireless protocols</li>
-        <li>Implemented wireless support in MFi-device interface using C++ and networking APIs, improving connectivity by 20%</li>
-        <li>Designed/optimized A/V pipelines using GStreamer and ALSA for low-latency playback and synchronized multi-display</li>
-        <li>Achieved ATS certification by implementing iAP2 over CarPlay Client to meet automotive compliance</li>
-        <li>Mentored and trained 2 junior engineers</li>
+        <li>Led the development of CarPlay Infotainment system on i.MX8 and custom SoCs using C, C++ and Linux, integrating voice control, real-time navigation, and wireless protocols (TCP/IP, Bluetooth, Wi-Fi) to deliver a seamless in-vehicle experience</li>
+        <li>Implemented wireless support in the MFi-device interface library using C++ and low-level networking APIs, improving connectivity functionality by 20% and ensuring robust device communication</li>
+        <li>Designed and optimized Audio/Video pipelines using GStreamer and ALSA, enabling low-latency media playback and synchronized multi-display infotainment across automotive systems</li>
+        <li>Achieved ATS certification by implementing iAP2 over CarPlay Client, meeting stringent automotive compliance and validation standards</li>
+        <li>Mentored and trained 2 junior engineers, helping to develop a high-performing and knowledgeable team</li>
       </ul>
 
       <strong>Embedded & Graphics Development | C, C++, Linux, Yocto, RTOS, IAR, OpenVG, Open GLES, Vulkan</strong>
       <ul>
-        <li>Customized Linux kernel images, DTBs, and Yocto builds to optimize boot and hardware compatibility across NXP i.MX platforms</li>
-        <li>Tuned bootloader and integrated kernel patches for improved system initialization and performance</li>
-        <li>Designed a 2D GPU test suite with 150K+ cases to support FreeRTOS driver porting, reducing defects by 30%</li>
-        <li>Optimized SVG rendering on constrained systems using OpenVG and VGLite, boosting accuracy from 8% to 89%</li>
-        <li>Resolved bugs using GDB, Valgrind, and IAR, ensuring embedded system reliability</li>
+        <li>Customized Linux kernel images, modules, and device tree blobs (DTBs), and tailored Yocto-based builds (Bitbake, OpenEmbedded) to optimize boot processes and hardware compatibility across NXP i.MX6/7/8, i.MXRT, and custom SoCs</li>
+        <li>Tuned bootloader configurations and integrated kernel patches to ensure reliable system initialization and enhanced runtime performance for embedded automotive platforms</li>
+        <li>Designed and implemented a GPU 2D test suite with 150K+ test cases in C and Python to support the driver porting from Embedded Linux to FreeRTOS, reducing driver defects by 30% and speeding up validation cycles by 40% on custom SoCs</li>
+        <li>Optimized static SVG rendering on 2MB memory-constrained embedded systems using OpenVG and VGLite, increasing rendering accuracy from 8% to 89% through element integration and memory tuning</li>
+        <li>Resolved critical software bugs using GDB, Valgrind, IAR, and custom test frameworks, ensuring embedded system reliability and compliance with quality standards</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Internship</h2>
-      <h3>Software Engineer Intern | Stealth Startup | May 2024 – Dec 2024</h3>
+      <h3>Software Engineer Intern | Stealth Startup | Spring Boot, REST APIs, Java, Postman, GCP, Flutter | May 2024 – Dec 2024</h3>
       <ul>
-        <li>Developed and deployed Spring Boot REST APIs integrated with GCP, reducing downtime</li>
-        <li>Streamlined API testing using Postman, improving performance by 5%</li>
-        <li>Automated CI/CD using GitLab, Docker, Kubernetes; integrated Firebase to boost release rate to 4x/week</li>
-        <li>Worked with stakeholders to solve system integration issues and ensure data flow</li>
+        <li>Developed and deployed REST APIs using Spring Boot and Java, integrating with GCP with minimal downtime</li>
+        <li>Streamlined API testing with Postman, resolving critical bugs and decreasing response time by 5%</li>
+        <li>Automated CI/CD workflows using GitLab, Docker, and Kubernetes; integrated Firebase for seamless cloud deployment, boosting release frequency to 4x/week</li>
+        <li>Collaborated with stakeholders to address system integration challenges, ensuring seamless data flow and interoperability</li>
       </ul>
     </div>
 
@@ -97,33 +121,28 @@
       <h2>Skills</h2>
       <ul>
         <li><strong>Languages:</strong> C, C++, Python, Shell Scripting, Make, CMake</li>
-        <li><strong>Embedded Expertise:</strong> Linux Kernel, Bootloader (U-Boot), DTB, Firmware, GPIO, UART, SPI, I2C, ARM Cortex, Memory Profiling</li>
-        <li><strong>Tools & Frameworks:</strong> Yocto, Buildroot, IAR, GDB, Valgrind, Git, JIRA, MISRA C, RTOS, SDK, BSP</li>
+        <li><strong>Embedded Systems Expertise:</strong> Linux Kernel, Bootloader Customization (U-Boot), Device Tree Configuration (DTB), Firmware Development, GPIO, UART, SPI, I2C, ARM Cortex, Memory Profiling</li>
+        <li><strong>Frameworks & Tools:</strong> Yocto, Buildroot, IAR, GDB, Valgrind, Git, JIRA, MISRA C, RTOS, SDK, BSP</li>
         <li><strong>Processors:</strong> NXP i.MX6/7/8, i.MX RT series, Custom SoCs</li>
-        <li><strong>Strengths:</strong> Kernel Debugging, Automation, HW/SW Integration, RT Systems, Performance Tuning, Test Automation, Low-Level Debugging</li>
+        <li><strong>Expertise:</strong> Kernel Debugging, Process Automation, Hardware/Software Integration, Real-Time Systems, Performance Tuning, Test Automation, Interface Development, Low-level debugging</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Education</h2>
-      <p><strong>Illinois Institute of Technology, Chicago</strong> — MS in Computer Science (Expected May 2025)</p>
-      <p>Courses: DSA, Advanced DB, Machine Learning, Networks, Software Quality, Mobile Dev</p>
-      <p><strong>National Institute of Technology, Surat</strong> — B.Tech in Electronics & Communication (2014–2018)</p>
-      <p>Courses: Embedded Systems, Microprocessor, Digital Logic</p>
+      <p><strong>Illinois Institute of Technology, Chicago, United States of America</strong> — Master of Science in Computer Science (Expected May 2025)</p>
+      <p>Courses: Data Structures and Algorithms, Advanced Database Organization, Machine Learning, Computer Networks, Software Quality Management, Mobile Application Development</p>
+      <p><strong>National Institute of Technology, Surat, India</strong> — Bachelor of Technology in Electronics and Communication Engineering (2014 – 2018)</p>
+      <p>Courses: Embedded Systems, Microprocessor, Digital Logic Design</p>
     </div>
 
     <div class="section">
       <h2>Projects</h2>
       <ul>
-        <li><strong>Database Management System | C, Linux:</strong> Designed modular DBMS with storage, buffer, B+ tree; optimized page replacement (FIFO, LRU, LFU)</li>
-        <li><strong>Image Classification | Python, PyTorch:</strong> Built CNN model (85% accuracy) for architectural element recognition; used k-fold validation and augmentation</li>
-        <li><strong>Mobile Apps | Flutter, Dart, MVC:</strong> Built 5 cross-platform apps with REST APIs using clean architecture and responsive design</li>
+        <li><strong>Database Management System Components | C, Linux:</strong> Engineered a modular Database Management System in C, implementing storage, buffer, record, and B+ tree index managers; enhanced data retrieval efficiency through optimized I/O, memory management, and advanced page replacement strategies (FIFO, LRU, LFU)</li>
+        <li><strong>Architectural Heritage Elements Image Classification | Python, Pytorch, CNN, Jupyter Notebook:</strong> Developed a CNN-based image classification model for architectural heritage elements, achieving 85% accuracy on a dataset of 10,235 images; optimized training pipeline using k-fold cross-validation and augmentation to enhance model robustness</li>
+        <li><strong>Mobile Applications | Dart, Flutter, MVC, REST APIs:</strong> Architected 5 cross-platform mobile apps using Flutter and RESTful APIs, applying MVC architecture to ensure clean code separation, scalability, and high performance across diverse user experiences</li>
       </ul>
-    </div>
-
-    <div class="section">
-      <h2>Resume</h2>
-      <p><a href="Resume_Shraddhaben_Rakholiya.pdf" download>Download Resume (PDF)</a></p>
     </div>
   </div>
 </body>
