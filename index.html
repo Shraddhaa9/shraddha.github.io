@@ -1,81 +1,130 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shraddhaben Rakholiya | Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f9f9f9; color: #333; }
-        header { background: #222; color: #fff; padding: 20px; text-align: center; }
-        main { padding: 20px; max-width: 900px; margin: auto; }
-        section { margin-bottom: 40px; }
-        h1, h2 { color: #333; }
-        ul { padding-left: 20px; }
-        .project { margin-bottom: 20px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shraddhaben Rakholiya | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f0f0f;
+      color: #f4f4f4;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    h1, h2, h3 {
+      color: #ffffff;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .section h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+    }
+    .contact {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.6rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Shraddhaben Rakholiya</h1>
-        <p>Embedded Software Engineer | Open to Relocation</p>
-        <p>Email: srakholiya@hawk.iit.edu | Phone: 224-875-8366</p>
-        <p><a href="https://github.com/shraddhaa9" target="_blank">GitHub</a> | <a href="#" target="_blank">LinkedIn</a></p>
-    </header>
-    <main>
-        <section>
-            <h2>Summary</h2>
-            <p>Experienced Embedded Software Engineer with a strong background in automotive systems, infotainment, and graphics development. Proven track record of delivering high-performance solutions across embedded Linux and RTOS platforms.</p>
-        </section>
-        <section>
-            <h2>Work Experience</h2>
-            <h3>Software Engineer – Picus Tech Software (2018–2023)</h3>
-            <ul>
-                <li>Developed CarPlay Infotainment systems using C/C++ on i.MX8 and custom SoCs</li>
-                <li>Implemented wireless MFi support and improved connectivity by 20%</li>
-                <li>Built A/V pipelines with GStreamer and ALSA for low-latency playback</li>
-                <li>Certified iAP2 over CarPlay client for ATS compliance</li>
-                <li>Mentored junior engineers to build a high-performing team</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Internship</h2>
-            <h3>Software Engineer Intern – Stealth Startup (2024)</h3>
-            <ul>
-                <li>Developed REST APIs with Spring Boot & GCP deployment</li>
-                <li>Automated CI/CD using GitLab, Docker, and Kubernetes</li>
-                <li>Integrated Firebase for cloud deployment</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <div class="project">
-                <strong>Database Management System Components</strong> – C, Linux<br>
-                Built a modular DBMS in C with optimized memory and I/O strategies (FIFO, LRU, LFU)
-            </div>
-            <div class="project">
-                <strong>Architectural Heritage Elements Classifier</strong> – Python, PyTorch<br>
-                CNN model achieving 85% accuracy on 10K+ images using k-fold validation
-            </div>
-            <div class="project">
-                <strong>Cross-platform Mobile Applications</strong> – Flutter, Dart, REST<br>
-                Developed 5 scalable apps with MVC and clean RESTful integration
-            </div>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Languages:</strong> C, C++, Python, Shell Scripting</li>
-                <li><strong>Embedded:</strong> Linux Kernel, Yocto, RTOS, IAR, Device Drivers</li>
-                <li><strong>Tools:</strong> GDB, Valgrind, Git, JIRA, Buildroot, CMake</li>
-                <li><strong>SoCs:</strong> i.MX6/7/8, i.MX RT series, Custom SoCs</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <p><strong>M.S. in Computer Science</strong> – Illinois Institute of Technology, Expected May 2025</p>
-            <p><strong>B.Tech in ECE</strong> – NIT Surat, India</p>
-        </section>
-    </main>
+  <div class="container">
+    <h1>Shraddhaben Rakholiya</h1>
+    <p class="contact">
+      <a href="mailto:srakholiya@hawk.iit.edu">srakholiya@hawk.iit.edu</a> | 224-875-8366 | Chicago, IL | Open to relocation<br>
+      <a href="https://www.linkedin.com/in/shraddharakholiya/">LinkedIn</a> |
+      <a href="https://github.com/Shraddhaa9">GitHub</a>
+    </p>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>
+        I am a skilled software engineer with a strong background in embedded systems, CarPlay and infotainment development, mobile applications, and system-level debugging. With over 5 years of experience at Picus Tech Software, I bring hands-on expertise in C/C++, Linux kernel tuning, driver porting, and optimized rendering for automotive platforms. I’m currently pursuing my MS in Computer Science at Illinois Tech and passionate about building efficient, high-quality systems.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Work Experience</h2>
+      <h3>Software Engineer | Picus Tech Software | May 2018 – May 2023</h3>
+      <strong>Infotainment & CarPlay Development | C, C++, Linux, GStreamer, ALSA, TCP/IP, Bluetooth, Wi-Fi, MFi, iAP2</strong>
+      <ul>
+        <li>Led development of CarPlay Infotainment system on i.MX8 and custom SoCs integrating voice control, real-time navigation, and wireless protocols</li>
+        <li>Implemented wireless support in MFi-device interface using C++ and networking APIs, improving connectivity by 20%</li>
+        <li>Designed/optimized A/V pipelines using GStreamer and ALSA for low-latency playback and synchronized multi-display</li>
+        <li>Achieved ATS certification by implementing iAP2 over CarPlay Client to meet automotive compliance</li>
+        <li>Mentored and trained 2 junior engineers</li>
+      </ul>
+
+      <strong>Embedded & Graphics Development | C, C++, Linux, Yocto, RTOS, IAR, OpenVG, Open GLES, Vulkan</strong>
+      <ul>
+        <li>Customized Linux kernel images, DTBs, and Yocto builds to optimize boot and hardware compatibility across NXP i.MX platforms</li>
+        <li>Tuned bootloader and integrated kernel patches for improved system initialization and performance</li>
+        <li>Designed a 2D GPU test suite with 150K+ cases to support FreeRTOS driver porting, reducing defects by 30%</li>
+        <li>Optimized SVG rendering on constrained systems using OpenVG and VGLite, boosting accuracy from 8% to 89%</li>
+        <li>Resolved bugs using GDB, Valgrind, and IAR, ensuring embedded system reliability</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Internship</h2>
+      <h3>Software Engineer Intern | Stealth Startup | May 2024 – Dec 2024</h3>
+      <ul>
+        <li>Developed and deployed Spring Boot REST APIs integrated with GCP, reducing downtime</li>
+        <li>Streamlined API testing using Postman, improving performance by 5%</li>
+        <li>Automated CI/CD using GitLab, Docker, Kubernetes; integrated Firebase to boost release rate to 4x/week</li>
+        <li>Worked with stakeholders to solve system integration issues and ensure data flow</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> C, C++, Python, Shell Scripting, Make, CMake</li>
+        <li><strong>Embedded Expertise:</strong> Linux Kernel, Bootloader (U-Boot), DTB, Firmware, GPIO, UART, SPI, I2C, ARM Cortex, Memory Profiling</li>
+        <li><strong>Tools & Frameworks:</strong> Yocto, Buildroot, IAR, GDB, Valgrind, Git, JIRA, MISRA C, RTOS, SDK, BSP</li>
+        <li><strong>Processors:</strong> NXP i.MX6/7/8, i.MX RT series, Custom SoCs</li>
+        <li><strong>Strengths:</strong> Kernel Debugging, Automation, HW/SW Integration, RT Systems, Performance Tuning, Test Automation, Low-Level Debugging</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <p><strong>Illinois Institute of Technology, Chicago</strong> — MS in Computer Science (Expected May 2025)</p>
+      <p>Courses: DSA, Advanced DB, Machine Learning, Networks, Software Quality, Mobile Dev</p>
+      <p><strong>National Institute of Technology, Surat</strong> — B.Tech in Electronics & Communication (2014–2018)</p>
+      <p>Courses: Embedded Systems, Microprocessor, Digital Logic</p>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Database Management System | C, Linux:</strong> Designed modular DBMS with storage, buffer, B+ tree; optimized page replacement (FIFO, LRU, LFU)</li>
+        <li><strong>Image Classification | Python, PyTorch:</strong> Built CNN model (85% accuracy) for architectural element recognition; used k-fold validation and augmentation</li>
+        <li><strong>Mobile Apps | Flutter, Dart, MVC:</strong> Built 5 cross-platform apps with REST APIs using clean architecture and responsive design</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Resume</h2>
+      <p><a href="Resume_Shraddhaben_Rakholiya.pdf" download>Download Resume (PDF)</a></p>
+    </div>
+  </div>
 </body>
 </html>
